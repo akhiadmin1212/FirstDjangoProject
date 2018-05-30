@@ -22,6 +22,5 @@ urlpatterns = [
     path('articles/<slug:title>/', views.article, name='article-detail'),
     path('articles/<slug:title>/<int:section>/', views.section, name='article-section'),
     path('weblog/', include('blog.urls')),
-    ...
 ]
 
